@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="worldModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="city">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="District" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Population" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="country">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="52" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Continent" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Region" Type="String" MaxLength="26" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SurfaceArea" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="IndepYear" Type="Int16" />
+    <Property Name="Population" Type="Int32" Nullable="false" />
+    <Property Name="LifeExpectancy" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="GNP" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="GNPOld" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="LocalName" Type="String" MaxLength="45" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GovernmentForm" Type="String" MaxLength="45" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="HeadOfState" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="Capital" Type="Int32" />
+    <Property Name="Code2" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="countrylanguage">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+      <PropertyRef Name="Language" />
+    </Key>
+    <Property Name="CountryCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Language" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IsOfficial" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Percentage" Type="Decimal" Precision="4" Scale="1" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WorldEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cities" EntityType="Self.city" />
+    <EntitySet Name="countries" EntityType="Self.country" />
+    <EntitySet Name="countrylanguages" EntityType="Self.countrylanguage" />
+  </EntityContainer>
+</Schema>

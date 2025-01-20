@@ -1,0 +1,10 @@
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\bin\Debug\ClientSOA.exe.config
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\bin\Debug\ClientSOA.exe
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\bin\Debug\ClientSOA.pdb
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.csproj.AssemblyReference.cache
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.Form1.resources
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.Properties.Resources.resources
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.csproj.GenerateResource.cache
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.csproj.CoreCompileInputs.cache
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.exe
+C:\Users\my pc\source\repos\ClientSOA\ClientSOA\obj\Debug\ClientSOA.pdb
